@@ -8,10 +8,10 @@ def scan(words):
 
     word = words.split()
     result = []
+
     for item in word:
         if convert_number(item):
             result.append(('number', int(item)))
-
         else:
             for key,value in dic.items():
                 if item in value:
